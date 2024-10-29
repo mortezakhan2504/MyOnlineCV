@@ -246,3 +246,7 @@
 .moreInfo a{
     text-decoration: none;
 }
+
+#loader{
+    font-size: 45px;
+}
