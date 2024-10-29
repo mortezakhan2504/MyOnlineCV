@@ -1,0 +1,248 @@
+/* body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+} */
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('font/Shabnam.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body{
+    font-family: MyCustomFont , sans-serif !important;
+} */
+
+.baxman{
+    padding: 0px;
+    margin-top: 50px;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    filter: blur(5px);
+}
+
+.hover-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.gallery-item:hover .hover-description {
+    opacity: 1;
+}
+
+.sub-gallery {
+    display: none;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.lightbox img {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.lightbox-description {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Queries برای ریسپانسیو کردن گالری */
+
+@media (max-width: 1200px) {
+    .gallery {
+        column-count: 2;
+        
+    }
+    .baxman{
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 1;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 70%;
+    }
+
+    .lightbox-description {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .prev, .next {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hover-description {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .lightbox-description {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .close {
+        font-size: 30px;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+.about-header{
+    margin-bottom: 40px !important;
+}
+.about-first-paragraph{
+    direction: rtl !important;
+    text-align: justify;
+}
+.services-heading{
+    margin-bottom: 30px !important;
+}
+.skills-header{
+    margin-bottom: 30px !important;
+
+}
+.contact-header{
+    margin-bottom: 30px !important;
+
+}
+.input-textarea {
+    resize: none;
+}
+#myForm {
+    direction: rtl;
+}
+
+.portfolio-text  {
+    direction: rtl;
+    text-align: justify;
+
+}
+
+
+
+.moreInfo{
+    
+    text-align: center;
+    margin: 50px;
+}
+.moreInfo a{
+    text-decoration: none;
+}
